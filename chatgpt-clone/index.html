@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChatGPT Clone - Dark Theme</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    html, body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-100 min-h-screen flex flex-col">
+  <!-- Header -->
+  <header class="flex items-center justify-between px-6 py-4 border-b border-gray-700">
+    <div class="text-xl font-semibold">ChatGPT</div>
+    <nav class="space-x-4">
+      <button class="text-gray-300 hover:text-white font-medium transition">Log in</button>
+      <button class="bg-white text-gray-900 font-semibold px-4 py-1 rounded hover:bg-gray-200 transition">Sign up for free</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow px-6 py-8 max-w-3xl mx-auto w-full">
+    <h1 class="text-3xl font-bold mb-4">What can I help with?</h1>
+
+    <div class="mb-6 flex items-start space-x-3">
+      <input id="tempChat" type="checkbox" class="mt-1 w-5 h-5 rounded border-gray-600 bg-gray-800 focus:ring-2 focus:ring-blue-500" checked />
+      <label for="tempChat" class="text-gray-300 font-semibold select-none cursor-pointer">Temporary Chat</label>
+    </div>
+    <p class="text-gray-400 mb-8 max-w-xl">
+      This chat won't appear in history or be used to train our models. For safety purposes, we may keep a copy of this chat for up to 30 days.
+    </p>
+
+    <textarea
+      placeholder="Ask anything"
+      rows="4"
+      class="w-full rounded-md bg-gray-800 border border-gray-700 text-gray-100 p-3 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+    ></textarea>
+
+    <!-- Buttons -->
+    <div class="mt-4 flex space-x-4 max-w-xl">
+      <button class="flex-1 bg-gray-800 border border-gray-700 rounded-md py-2 text-gray-300 font-semibold hover:bg-gray-700 transition">Attach</button>
+      <button class="flex-1 bg-gray-800 border border-gray-700 rounded-md py-2 text-gray-300 font-semibold hover:bg-gray-700 transition">Search</button>
+      <button class="flex-1 bg-gray-800 border border-gray-700 rounded-md py-2 text-gray-300 font-semibold hover:bg-gray-700 transition">Reason</button>
+      <button class="flex-1 bg-gray-800 border border-gray-700 rounded-md py-2 text-gray-300 font-semibold hover:bg-gray-700 transition">Voice</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-gray-700 py-4 px-6 text-center text-gray-500 text-sm">
+    By messaging ChatGPT, you agree to our
+    <a href="https://openai.com/terms" target="_blank" class="underline hover:text-gray-300">Terms</a> and have read our
+    <a href="https://openai.com/privacy" target="_blank" class="underline hover:text-gray-300">Privacy Policy</a>.
+  </footer>
+</body>
+</html>
